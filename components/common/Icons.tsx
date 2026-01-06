@@ -1,3 +1,4 @@
+
 import {
   LayoutDashboard,
   Package,
@@ -47,7 +48,9 @@ import {
   Mic,
   MicOff,
   MessageSquare,
-  Volume2
+  Volume2,
+  // Added missing Activity icon import for Analytics
+  Activity
 } from 'lucide-react';
 
 export {
@@ -99,5 +102,7 @@ export {
   Mic,
   MicOff,
   MessageSquare,
-  Volume2
+  Volume2,
+  // Exported Activity icon for use in components
+  Activity
 };
