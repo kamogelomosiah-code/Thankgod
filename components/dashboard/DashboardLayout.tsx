@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { LayoutDashboard, Package, ShoppingCart, Users, Palette, BarChart, Settings, Bell, Search, Menu, LogOut, ArrowUpRight, ShoppingBag } from '../common/Icons';
@@ -34,9 +35,9 @@ const DashboardLayout: React.FC = () => {
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 transform transition-transform duration-200 ease-in-out lg:translate-x-0 lg:static lg:inset-auto flex flex-col ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 border-b border-gray-100 flex items-center justify-between lg:justify-start gap-3">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-lg`} style={{ backgroundColor: primaryColor }}>
-                L
+                {config.storeName.charAt(0)}
             </div>
-            <span className="font-serif font-bold text-xl text-gray-900 tracking-tight">Liquor Spot</span>
+            <span className="font-serif font-bold text-xl text-gray-900 tracking-tight">{config.storeName}</span>
             <button className="lg:hidden" onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
                 <Menu size={20} />
             </button>

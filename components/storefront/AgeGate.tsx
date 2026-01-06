@@ -1,7 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
+import { useStore } from '../../context/StoreContext';
 
 const AgeGate: React.FC<{ onVerify: () => void }> = ({ onVerify }) => {
   const [error, setError] = useState('');
+  const { config } = useStore();
 
   const handleEnter = () => {
     // Simple check - in real app would check date
@@ -16,7 +19,7 @@ const AgeGate: React.FC<{ onVerify: () => void }> = ({ onVerify }) => {
   return (
     <div className="fixed inset-0 z-[100] bg-gray-900 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
       <div className="bg-white max-w-lg w-full rounded-2xl p-8 text-center shadow-2xl">
-        <h1 id="age-gate-title" className="font-serif text-3xl font-bold text-gray-900 mb-4">Welcome to Liquor Spot</h1>
+        <h1 id="age-gate-title" className="font-serif text-3xl font-bold text-gray-900 mb-4">Welcome to {config.storeName}</h1>
         <p className="text-gray-600 mb-8">
             You must be of legal drinking age to enter this site.
             Please verify your age to continue.

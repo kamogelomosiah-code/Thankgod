@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from '../../context/StoreContext';
@@ -20,7 +21,7 @@ const Auth: React.FC = () => {
       <div className="max-w-md w-full animate-in fade-in slide-in-from-bottom-8 duration-700">
         <div className="text-center mb-12">
             <h1 className="font-serif text-4xl mb-3">{isLogin ? 'Welcome Back' : 'Create Account'}</h1>
-            <p className="text-neutral-500 text-sm font-light">Join the Liquor Spot collection community.</p>
+            <p className="text-neutral-500 text-sm font-light">Join the Liqpur Spot collection community.</p>
         </div>
 
         <div className="bg-white p-10 rounded-2xl shadow-sm border border-neutral-100">

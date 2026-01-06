@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI, Modality, LiveServerMessage } from '@google/genai';
 import { Sparkles, Mic, MicOff, X, MessageSquare, Volume2 } from '../common/Icons';
@@ -58,7 +59,7 @@ const AIConcierge: React.FC = () => {
       
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       
-      const systemPrompt = `You are a high-end liquor store sommelier at "Liquor Spot". 
+      const systemPrompt = `You are a high-end liquor store sommelier at "Liqpur Spot". 
       You are elegant, knowledgeable, and helpful. 
       Recommend products from our catalog. Current catalog includes: ${products.map(p => `${p.name} (${p.category} - ${p.price})`).join(', ')}.
       Keep responses concise and sophisticated. Speak warmly.`;

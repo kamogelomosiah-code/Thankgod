@@ -46,7 +46,7 @@ const StorefrontLayout: React.FC = () => {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setIsMenuOpen(false)}></div>
         <div className={`absolute left-0 top-0 bottom-0 w-full max-w-sm bg-white shadow-2xl transition-transform duration-500 flex flex-col ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="p-8 border-b border-neutral-100 flex items-center justify-between">
-                <span className="font-serif font-bold text-2xl tracking-tighter">LIQUOR SPOT</span>
+                <span className="font-serif font-bold text-2xl tracking-tighter uppercase">{config.storeName}</span>
                 <button onClick={() => setIsMenuOpen(false)} className="p-2 hover:bg-neutral-50 rounded-full transition-colors"><X size={24} /></button>
             </div>
             
@@ -91,8 +91,8 @@ const StorefrontLayout: React.FC = () => {
                     <Menu size={24} />
                 </button>
                 <Link to="/store" className="group flex items-center gap-3">
-                    <div className="w-9 h-9 flex items-center justify-center text-white font-serif italic text-xl transition-transform group-hover:scale-105" style={{ backgroundColor: config.primaryColor }}>L</div>
-                    <span className="font-serif font-bold text-2xl tracking-tight hidden sm:block">Liquor Spot</span>
+                    <div className="w-9 h-9 flex items-center justify-center text-white font-serif italic text-xl transition-transform group-hover:scale-105" style={{ backgroundColor: config.primaryColor }}>{config.storeName.charAt(0)}</div>
+                    <span className="font-serif font-bold text-2xl tracking-tight hidden sm:block">{config.storeName}</span>
                 </Link>
             </div>
 

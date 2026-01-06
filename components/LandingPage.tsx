@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
       {/* Center Logo Bridge */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-2 z-20 pointer-events-none">
           <div className="w-16 h-16 bg-white border border-neutral-100 shadow-2xl rounded-full flex items-center justify-center font-serif italic text-2xl font-bold">
-            S
+            {config.storeName.charAt(0)}
           </div>
           <div className="h-20 w-[1px] bg-neutral-100"></div>
       </div>

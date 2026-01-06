@@ -7,13 +7,13 @@ export const CURRENCY = 'R';
 export const getPlaceholder = (id: string | number) => `https://via.placeholder.com/800x1000/F4F4F4/A3A3A3?text=LS+PRODUCT+${id}`;
 
 export const INITIAL_CONFIG: StoreConfig = {
-  storeName: "Liquor Spot",
+  storeName: "Liqpur Spot",
   primaryColor: PrimaryColorPreset.Charcoal,
   layout: 'grid',
   heroImage: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000",
   heroHeadline: "The Fine Art of Selection",
   heroSubheadline: "Sourced globally. Delivered across Africa within 60 minutes.",
-  contactEmail: "concierge@liquorspot.com",
+  contactEmail: "concierge@liqpurspot.com",
   contactPhone: "+27 (0) 10 999 8888"
 };
 
